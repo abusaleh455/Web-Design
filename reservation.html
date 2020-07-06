@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="php" href="conn.php">
+
+    <title>Bootstrap Project</title>
+</head>
+<body>
+<header>
+
+    <nav class="navbar fixed-top border-bottom navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo icon" class="img-fluid" >
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse  navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home<span class="sr-only">(current)</span></a> </li>
+                    <li class="nav-item"><a href="productscategories.html" class="nav-link">Dish</a> </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Chefs</a> </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Blog</a> </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a> </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Pages</a> </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Reservation</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+
+
+<!--Markup for Content-->
+<div class="col-md-6 content_text">
+    <div id="reservations">
+        <h1>Reservation</h1>
+        <form id="reservation_form" class="reserve_form pad_top13" action="conn.php" method="post">
+            <p>You can make a reservation by filling out the form below, Please note that reservations are only confirmed once we check availability.</p>
+
+            <h4>Reservation Details</h4>
+            <div class="clearfix reserve_form">
+                <input type="text" name="name" class="validate['required'] textbox1" placeholder="* Name : " onfocus="this.placeholder = ''" onblur="this.placeholder = '* Name :'">
+                <input type="text" name="email" class="validate['required','email']  textbox1" placeholder="* Email : " onfocus="this.placeholder = ''" onblur="this.placeholder = '* Email :'">
+                <input type="text" name="phone" class="validate['required','phone']  textbox1" placeholder="* Phone : " onfocus="this.placeholder = ''" onblur="this.placeholder = '* Phone :'">
+                <textarea name="message" class="validate['required'] messagebox1" placeholder="* Message : " onfocus="this.placeholder = ''" onblur="this.placeholder = '* Message :'"></textarea>
+                <input id="reservesubmitBtn" value="book a table" name="Confirm" type="submit" class="submitBtn">
+            </div>
+        </form>          <div id="post-message-reservation" class="post_message"></div>
+    </div>
+</div>
+<!--Markup for divider-->
+<div id="divider">
+</div>
+
+
+
+<!--html for footer-->
+
+<footer class="top-footer">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="row">
+                    <h4 class="text-white">About Us</h4>
+                    <p class="text-muted pt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore dolore magna aliqua. </p>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="row">
+                    <h4 class="text-white">Contact Us</h4>
+                    <p class="text-muted pt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore dolore magna aliqua. </p>
+                </div>
+                <h4 class="text-danger font-weight-bold">012-6532-568-9746
+                    012-6532-569-9748 </h4>
+            </div>
+
+            <div class="col-md-4 ">
+                <div class="row">
+                    <h4 class="text-white">Newsletter</h4>
+                    <p class="text-muted pt-4">You can trust us. we only send offers, not a single spam.</p>
+                </div>
+                <nav class="navbar navbar-light ">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="email" placeholder="Email-address" aria-label="Email-address">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Confirm</button>
+                    </form>
+                </nav>
+            </div>
+
+        </div>
+
+        <div class="row pt-5">
+            <div class="col-md-6">
+                <p class="text-muted">Copyright ©2019 All rights reserved |
+                    This template is made with <i class="far fa-heart"></i> by <a href="#">Sujan</a></p>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-8">
+
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="fa-ul">
+                            <a href="#">
+                                <p class="text-white">
+                                    <i class="fab fa-facebook-f "></i>
+                                    <i class="fab fa-instagram "></i>
+                                    <i class="fab fa-twitter "></i>
+                                    <i class="fab fa-linkedin "></i>
+                                </p>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $('.carousel').carousel({
+        interval: 2000
+    })
+</script>
+</body>
+</html>
